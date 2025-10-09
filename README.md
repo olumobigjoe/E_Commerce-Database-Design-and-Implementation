@@ -1,0 +1,39 @@
+# DATABASE DESIGN
+An SQL Database design for an eCommerce store known as Global Gadgets, including schema scripts and ERD (Entity Relationship Diagram.
+
+#  PROJECT OBJECTIVES
+The objective is to design a normalized relational database to support operations such as customer management, order processing, 
+inventory tracking, and supplier management.
+
+
+# PROJECT CONTENTS
+## 1.0 E-Commerce System
+When a customer wants to register on the online store, they need to provide their full name, billing 
+address, date of birth, and their preferred payment method. Also, they must create a username and 
+password to allow them to sign into the customer portal. The system will store the customer’s data. 
+Optionally, they can also provide an email address and telephone number. 
+The customers will then place an Order through the portal. The system checks Product availability 
+(Stock Level). Order details are stored, including date, time, shipping method, status (pending, 
+processing, shipped, delivered, or cancelled), and the products included. 
+When the order is being processed, the warehouse staff should check and review the Product details 
+including the supplier, current stock level, and recent sales history. The system must update the 
+Inventory with the new reduced stock level upon shipment. 
+When a customer receives their order and the status is changed to delivered, they can write a 
+review/rating for the product(s) purchased. If the customer has cancelled the order, they must place 
+a new order again. If the customer closes their account, the retailer wants to retain their information 
+on the system for auditing, but they should keep a record of the date the customer left/deactivated 
+their account.
+
+## 2.0 Design and Implementation 
+The design normalises the database into 3NF, fully explaining and 
+justifying the database design decisions and documenting the processes to implement this design using T-SQL statements 
+in Microsoft SQL Server Management Studio. All tables and views were created using TSQL statements. 
+Column(s) that are primary keys or foreign keys were clearly highlighted and the data type used explained for each column 
+justifying the choice reason. Constraints were also used when creating the database to help ensure data integrity. 
+Tables were created according to the scenario explained above which includes details on Customers, Products, Orders, Suppliers, Inventory and Reviews.
+
+## Conclusion and Justification
+This design ensures scalability, integrity (via constraints/FKs), and meets all requirements. Normalization to 3NF reduces anomalies (e.g., no duplicate categories). 
+Objects support operations like searching/updating. Total implementation time: ~4 hours in SSMS. For production, add indexes (e.g., on OrderDate) and security (roles). 
+Backup: As scripted above.
+
