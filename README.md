@@ -5,7 +5,8 @@
 
 ---
 ## Project Overview
-- Database for Global Gadgets e-commerce system. Handles customers, products, orders, suppliers, inventory.
+- Database for Global Gadgets e-commerce system.
+- Handles customers, products, orders, suppliers, inventory.
 - Normalized to 3NF. Implemented in MS SQL Server.
 
 ---
@@ -13,7 +14,7 @@
 ##  Project Objective
 <p align = 'justify'>
 The objective is to design a normalized relational database to support operations such as customer management, order processing, 
-inventory tracking, and supplier management.
+inventory tracking, supplier management and customer's reviews.
 </p>
 
 ---
