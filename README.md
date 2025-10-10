@@ -103,7 +103,7 @@ Ex: Querying for customers above 40 years with 'Premium'
 ## Conclusion
 <p align = 'justify'>
 This design ensures scalability, integrity (via constraints/FKs), and meets all requirements. Normalization to 3NF reduces anomalies (e.g., no duplicate categories). 
-Objects support operations like searching/updating. Total implementation time: ~4 hours in SSMS. For production, add indexes (e.g., on OrderDate) and security (roles). 
+Objects support operations like searching/updating. Total implementation time: ~4 hours in SSMS. 
 </p>
 
 ---
