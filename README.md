@@ -35,7 +35,7 @@ inventory tracking, and supplier management.
 ---
 
 ## Project Contents
-### 1.0 E-Commerce System
+### _E-Commerce System_
 <p align = 'justify'>
 When a customer wants to register on the online store, they need to provide their full name, billing 
 address, date of birth, and their preferred payment method. Also, they must create a username and 
@@ -56,7 +56,7 @@ their account.
 
 ---
 
-## 2.0 Design and Implementation 
+## _Design and Implementation_
 <p align = 'justify'>
 The design normalises the database into 3NF, fully explaining and 
 justifying the database design decisions and documenting the processes to implement this design using T-SQL statements 
@@ -78,6 +78,8 @@ Inventory and Reviews.
 ## Usage
 - Search products: EXEC SearchProductsByName 'query';
 - View orders: SELECT * FROM OrderDetailsView;
+- Triggers
+- SELECT queries which make use of joins and sub-queries
 ---
 
 ## Testing
