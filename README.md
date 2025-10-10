@@ -5,10 +5,8 @@
 
 ---
 ## Project Overview
-<p align = 'justify'>
-* Database for Global Gadgets e-commerce system. Handles customers, products, orders, suppliers, inventory.
-* Normalized to 3NF. Implemented in MS SQL Server.
-</p>  
+- Database for Global Gadgets e-commerce system. Handles customers, products, orders, suppliers, inventory.
+- Normalized to 3NF. Implemented in MS SQL Server.
 
 ---
 
@@ -88,6 +86,7 @@ Data populated for queries. Run test_queries.sql.
 ---
 
 ### ERD for the Design
+This database consists of Ten (10) tables representing the major functionality of the Global Gadget Online Store
 <img width="1401" height="815" alt="Screenshot 2025-10-07 163007" src="https://github.com/user-attachments/assets/94ae1c4a-8dc8-40c5-a1ce-45f4404e7de0" />
 
 ---
