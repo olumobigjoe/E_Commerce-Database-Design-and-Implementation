@@ -87,7 +87,12 @@ Data populated for queries. Run test_queries.sql.
 
 ---
 
-## Conclusion and Justification
+### ERD for the Design
+<img width="1401" height="815" alt="Screenshot 2025-10-07 163007" src="https://github.com/user-attachments/assets/94ae1c4a-8dc8-40c5-a1ce-45f4404e7de0" />
+
+---
+
+## Conclusion
 <p align = 'justify'>
 This design ensures scalability, integrity (via constraints/FKs), and meets all requirements. Normalization to 3NF reduces anomalies (e.g., no duplicate categories). 
 Objects support operations like searching/updating. Total implementation time: ~4 hours in SSMS. For production, add indexes (e.g., on OrderDate) and security (roles). 
