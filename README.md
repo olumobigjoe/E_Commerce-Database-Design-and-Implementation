@@ -4,14 +4,14 @@
 </p>
 
 ---
-## Project Overview
+## 📖Project Overview
 - Database for Global Gadgets e-commerce system.
 - Handles customers, products, orders, suppliers, inventory.
 - Normalized to 3NF. Implemented in MS SQL Server.
 
 ---
 
-##  Project Objective
+##  📁Project Objective
 <p align = 'justify'>
 The objective is to design a normalized relational database to support operations such as customer management, order processing, 
 inventory tracking, supplier management and customer's reviews.
@@ -19,7 +19,7 @@ inventory tracking, supplier management and customer's reviews.
 
 ---
 
-## Schema
+## 🔖Schema
 - **Customers**: CustomerID (PK), FullName, DOB, Username, Password, Email, Phone, PaymentMethod, DeactivationDate
 - **Addresses**: AddressID(PK), CustomerID(FK), Street, City, State, ZIP
 - **Suppliers**: SupplierID (PK), Name, Email, Phone
@@ -33,7 +33,7 @@ inventory tracking, supplier management and customer's reviews.
 
 ---
 
-## Project Contents
+## 📁Project Contents
 ### _E-Commerce System_
 <p align = 'justify'>
 When a customer wants to register on the online store, they need to provide their full name, billing 
@@ -68,20 +68,20 @@ Inventory and Reviews.
 
   ---
 
-## Installation
+## ⛓️Installation
 1. Run create_db.sql to create database and tables.
 2. Run inserts.sql to populate data.
 3. Run objects.sql for constraints, procs, views, triggers.
 ---
 
-## Usage
+## 🔄 Usage
 - Search products: EXEC SearchProductsByName 'query';
 - View orders: SELECT * FROM OrderDetailsView;
 - Triggers
 - SELECT queries which make use of joins and sub-queries
 ---
 
-## Testing
+## ☑️: Testing
 Data populated for queries. Run test_queries.sql.
 
 ---
