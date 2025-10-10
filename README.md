@@ -106,6 +106,7 @@ This design ensures scalability, integrity (via constraints/FKs), and meets all 
 Objects support operations like searching/updating. Total implementation time: ~4 hours in SSMS. For production, add indexes (e.g., on OrderDate) and security (roles). 
 </p>
 
+---
 
 ## Database Query Example
 SQL query to retrieve number of delivered electronics orders
@@ -119,8 +120,4 @@ JOIN ProductCategories pc ON p.CategoryID = pc.CategoryID
 WHERE o.Status = 'delivered'
   AND pc.CategoryName = 'Electronics';
 ---
-
-
-  
-Backup: As scripted above.
 
