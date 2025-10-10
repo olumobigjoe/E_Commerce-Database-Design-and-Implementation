@@ -87,7 +87,16 @@ Data populated for queries. Run test_queries.sql.
 
 ### ERD for the Design
 This database consists of Ten (10) tables representing the major functionality of the Global Gadget Online Store
+
 <img width="1401" height="815" alt="Screenshot 2025-10-07 163007" src="https://github.com/user-attachments/assets/94ae1c4a-8dc8-40c5-a1ce-45f4404e7de0" />
+
+---
+
+## Using JOINS to Query the Database
+Ex: Querying for customers above 40 years with 'Premium'
+
+<img width="805" height="360" alt="Screenshot 2025-10-08 070152" src="https://github.com/user-attachments/assets/3539df36-840a-408b-b62b-5ea377ed6532" />
+
 
 ---
 
