@@ -81,7 +81,7 @@ Inventory and Reviews.
 - SELECT queries which make use of joins and sub-queries
 ---
 
-## ☑️: Testing
+## ☑️Testing
 Data populated for queries. Run test_queries.sql.
 
 ---
