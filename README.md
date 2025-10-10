@@ -4,8 +4,15 @@
 </p>
 
 ---
+## Project Overview
+<p align = 'justify'>
+* Database for Global Gadgets e-commerce system. Handles customers, products, orders, suppliers, inventory.
+* Normalized to 3NF. Implemented in MS SQL Server.
+</p>  
 
-##  PROJECT OBJECTIVES
+---
+
+##  Project Objective
 <p align = 'justify'>
 The objective is to design a normalized relational database to support operations such as customer management, order processing, 
 inventory tracking, and supplier management.
@@ -13,7 +20,21 @@ inventory tracking, and supplier management.
 
 ---
 
-## PROJECT CONTENTS
+## Schema
+- **Customers**: CustomerID (PK), FullName, DOB, Username, Password, Email, Phone, PaymentMethod, DeactivationDate
+- **Addresses**: AddressID(PK), CustomerID(FK), Street, City, State, ZIP
+- **Suppliers**: SupplierID (PK), Name, Email, Phone
+- **ProductCategories**: CategoryID (PK), CategoryNameSupplierID (FK)
+- **Products**: ProductID (PK), Name, Price, CategoryID (FK), SupplierID (FK)
+- **Inventory**: ProductID (PK), StockLevel
+- **ShippingMethods**: ShippingMethodID (PK), MethodName, Cost
+- **Orders**: OrderID (PK), CustomerID (FK), OrderDate, ShippingMethodID (FK), Status, TotalCost
+- **OrderItems**: OrderItemID (PK), OrderID (FK, CASCADE), ProductID (FK), PriceAtTime
+- **Reviews**: ReviewID (PK), CustomerID (FK), ProductID (FK), Rating, ReviewText, ReviewDate
+
+---
+
+## Project Contents
 ### 1.0 E-Commerce System
 <p align = 'justify'>
 When a customer wants to register on the online store, they need to provide their full name, billing 
@@ -42,10 +63,27 @@ justifying the database design decisions and documenting the processes to implem
 in Microsoft SQL Server Management Studio. All tables and views were created using TSQL statements. 
 Column(s) that are primary keys or foreign keys were clearly highlighted and the data type used explained for each column 
 justifying the choice reason. Constraints were also used when creating the database to help ensure data integrity. 
-Tables were created according to the scenario explained above which includes details on Customers, Products, Orders, Suppliers, Inventory and Reviews.
+Tables were created according to the scenario explained above which includes details on Customers, Products, Orders, Suppliers, 
+Inventory and Reviews.
 </p>
 
   ---
+
+## Installation
+1. Run create_db.sql to create database and tables.
+2. Run inserts.sql to populate data.
+3. Run objects.sql for constraints, procs, views, triggers.
+---
+
+## Usage
+- Search products: EXEC SearchProductsByName 'query';
+- View orders: SELECT * FROM OrderDetailsView;
+---
+
+## Testing
+Data populated for queries. Run test_queries.sql.
+
+---
 
 ## Conclusion and Justification
 <p align = 'justify'>
