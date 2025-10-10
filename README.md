@@ -98,7 +98,6 @@ Ex: Querying for customers above 40 years with 'Premium'
 
 <img width="805" height="360" alt="Screenshot 2025-10-08 070152" src="https://github.com/user-attachments/assets/3539df36-840a-408b-b62b-5ea377ed6532" />
 
-
 ---
 
 ## Conclusion
@@ -107,7 +106,20 @@ This design ensures scalability, integrity (via constraints/FKs), and meets all 
 Objects support operations like searching/updating. Total implementation time: ~4 hours in SSMS. For production, add indexes (e.g., on OrderDate) and security (roles). 
 </p>
 
+
+## Database Query Example
+SQL query to retrieve number of delivered electronics orders
+
+```sql
+SELECT COUNT(DISTINCT o.OrderID) AS DeliveredElectronicsOrders
+FROM Orders o
+JOIN OrderItems oi ON o.OrderID = oi.OrderID
+JOIN Products p ON oi.ProductID = p.ProductID
+JOIN ProductCategories pc ON p.CategoryID = pc.CategoryID
+WHERE o.Status = 'delivered'
+  AND pc.CategoryName = 'Electronics';
 ---
+
 
   
 Backup: As scripted above.
