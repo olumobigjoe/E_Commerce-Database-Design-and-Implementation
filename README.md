@@ -119,5 +119,6 @@ JOIN Products p ON oi.ProductID = p.ProductID
 JOIN ProductCategories pc ON p.CategoryID = pc.CategoryID
 WHERE o.Status = 'delivered'
   AND pc.CategoryName = 'Electronics';
----
+
+
 
